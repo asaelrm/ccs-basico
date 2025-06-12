@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CineAsa</title>
+  <link rel="stylesheet" href="stylo.css"/>
+</head>
+<body>
+  <div class="loader">CineAsa</div>
+
+  <header class="glass">
+    <h1>CineAsa</h1>
+    <nav class="nav">
+      <input type="checkbox" id="menu-toggle"/>
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <ul class="menu">
+        <li><a href="#cartelera">Cartelera</a></li>
+        <li><a href="#promos">Promociones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>¡Vive la experiencia del cine!</h2>
+    <p>Estrenos, clásicos y más. Solo en CineStar.</p>
+  </section>
+
+  <section id="cartelera" class="cartelera">
+    <h2>Cartelera</h2>
+    <div class="peliculas">
+      <div class="pelicula">
+        <img src="Sugar Island.png" alt="Pelicula 1">
+        <h3>Sugar Island</h3>
+      </div>
+      <div class="pelicula">
+        <img src="Lilo & Stitch.png" alt="Pelicula 2">
+        <h3>Lilo & stitch</h3>
+      </div>
+      <div class="pelicula">
+        <img src="Mission Impossible.png" alt="Pelicula 3">
+        <h3>Mission Impossible</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="promos" class="promos">
+    <h2>Promociones</h2>
+    <p>Martes 2x1 y combos especiales todos los días.</p>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CineStar. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

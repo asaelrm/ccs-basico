@@ -1,0 +1,181 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
+  background-size: 600% 600%;
+  animation: fondoAnimado 15s ease infinite;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+@keyframes fondoAnimado {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.loader {
+  text-align: center;
+  font-size: 2em;
+  padding: 2rem;
+  background: black;
+  color: crimson;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 10;
+}
+
+header h1 {
+  color: crimson;
+}
+
+.nav {
+  position: relative;
+}
+
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: crimson;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    width: 200px;
+    display: none;
+  }
+
+  #menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+  }
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  background-image: url('https://images.unsplash.com/photo-1598899134739-24c46f58c571?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+.cartelera {
+  padding: 4rem 2rem;
+  background: rgba(0,0,0,0.8);
+  text-align: center;
+}
+
+.peliculas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pelicula {
+  background: #111;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.pelicula img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.pelicula:hover {
+  transform: scale(1.05);
+}
+
+.promos, .contacto {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #1c1c1c;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: darkred;
+}
+
+footer {
+  background: black;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
