@@ -179,3 +179,14 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+
+.footer-social a {
+  color: #dc143c;
+  font-size: 1.2rem;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+.footer-social a:hover {
+  color: #fff;
+}
+
